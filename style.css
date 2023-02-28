@@ -1,0 +1,29 @@
+.box {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    text-align: center;
+}
+button {
+    width: max-content;
+}
+input {
+    max-width: 250px;
+    width: 100%;
+}
+.white {
+    background: white;
+}
+.red {
+    background: red;
+}
+.green {
+    background: green;
+}
+.orange {
+    background: orange;
+}

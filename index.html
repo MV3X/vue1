@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="box">
+            <h1>ДЗ</h1>
+            <button @click="color = 'green'">Зеленый</button>
+            <button @click="color = 'red'">Красный</button>
+            <button @click="color = 'orange'">Оранжевый</button>
+            <input type="text" v-model="write">
+            <p v-if="write == 0" :class="color">Поле пустое</p>
+            <p v-else-if="write < 20" :class="color">Вы ввели число: {{ write }}</p>
+            <p v-else-if="write > 20" :class="color">Вы ввели число больше 20, вы ввели  {{ write }}</p>
+            <p v-else="write == 'string'" :class="color">Вы ввели не число</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
